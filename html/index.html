@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+  <title>На сколько мозг мощнее суперкомпьютера? &mdash; Toster.ru</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+ 
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="layout">
+    <div class="layout__canvas" id="js-canvas">
+
+
+      <aside class="layout__navbar" role="navbar">
+        <span class="logo logo_sidebar">
+          <svg class="icon_svg icon_logo">
+            <use xlink:href="images/sprite_0.1.svg#icon_logo"></use>
+          </svg>
+        </span>
+        <section class="user-panel" role="user_expand_menu">
+          <div class="user-panel_head">
+            <svg class="icon_svg icon_menu_lock" viewBox="0 0 32 32">
+              <use xlink:href="images/sprite_0.1.svg#icon_menu_lock"></use>
+            </svg>
+            <span class="user-panel__login-link">Войти на сайт</span>
+          </div>
+        </section>
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <span class="main-menu__link " id="item_questions">
+              <svg class="icon_svg icon_menu_questions" viewBox="0 0 32 32">
+                <use xlink:href="images/sprite_0.1.svg#icon_menu_question"></use>
+              </svg>
+              Все вопросы
+            </span>
+          </li>
+          <li class="main-menu__item">
+            <span class="main-menu__link ">
+              <svg class="icon_svg icon_menu_tags" viewBox="0 0 32 32">
+                <use xlink:href="images/sprite_0.1.svg#icon_menu_tags"></use>
+              </svg>
+              Все теги
+            </span>
+          </li>
+          <li class="main-menu__item">
+            <span class="main-menu__link ">
+              <svg class="icon_svg icon_menu_users" viewBox="0 0 34 32">
+                <use xlink:href="images/sprite_0.1.svg#icon_menu_users"></use>
+              </svg>
+              Пользователи
+            </span>
+          </li>
+        </ul>
+      </aside>
+
+
+      <div class="layout__body">
+        <header class="layout__topbar">
+          <div class="layout__topbar_suggest">
+            <div class="layout__topbar_wrap">
+              <form class="suggest">
+                <div class="suggest__field_wrap">
+                  <div class="suggest__wrap_fluid">
+                    <input class="suggest__field" type="search" placeholder="Найти вопрос, ответ, тег или пользователя">
+                  </div>
+                  <button class="btn btn_link" type="button">
+                    <span>Закрыть</span>
+                  </button>
+                </div>
+                <button class="btn btn_suggest" type="button" role="btn_suggest">
+                  <svg class="icon_svg icon_search" viewBox="0 0 32 32">
+                    <use xlink:href="images/sprite_0.1.svg#icon_search"></use>
+                  </svg>
+                </button>
+              </form>
+              <div class="layout__topbar_add-question">
+                <a class="btn btn_green btn_add-question" href="question/new">
+                  <svg class="icon_svg icon_plus" viewBox="0 0 32 32">
+                    <use xlink:href="images/sprite_0.1.svg#icon_plus"></use>
+                  </svg>
+                  <span>Заказать</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="layout__topbar_canvas-toggler">
+            <button class="btn btn_navbar_toggle" type="button">
+              <svg class="icon_svg icon_burger" viewBox="0 0 32 32">
+                <use xlink:href="images/sprite_0.1.svg#icon_burger"></use>
+              </svg>
+            </button>
+            <span class="logo logo_topbar">
+              <svg class="icon_svg icon_logo">
+                <use xlink:href="images/sprite_0.1.svg#icon_logo"></use>
+              </svg>
+            </span>
+          </div>
+        </header>
+        <section class="column column_wrap" role="wrap_section">
+          <div class="column_main">
+            <main class="page">
+              <div class="page__body" id="question_show">
+                <div class="question question_full">
+                  <header class="question-head">
+                    <div class="user-summary user-summary_question">
+                      <span class="user-summary__avatar">
+                        <svg class="icon_userpic" viewBox="0 0 32 32">
+                          <use xlink:href="images/sprite_0.1.svg#icon_userpic"></use>
+                        </svg>
+                      </span>
+                      <div class="user-summary__desc">
+                        <span class="user-summary__name"> dimonrud </span>
+                        <span class="user-summary__nickname"> @dimonrud </span>
+                      </div>
+                    </div>
+                  </header>
+                  <nav class="question__tags">
+                    <a class="question__tags-image" href="https://toster.ru/tag/нейронные сети">
+                      <img class="tag__image tag__image_bg" src="images/net.png" alt="нейронные сети">
+                    </a>
+                    <ul class="tags-list">
+                      <li class="tags-list__item  tag_157076">
+                        <span href="https://toster.ru/tag/нейронные сети"> Нейронные сети </span>
+                      </li>
+                      <li class="tags-list__item  tag_158537">
+                        <span href="https://toster.ru/tag/компьютеры"> Компьютеры </span>
+                      </li>
+                      <li class="tags-list__item  tag_162422">
+                        <span href="https://toster.ru/tag/мозг"> Мозг </span>
+                      </li>
+                    </ul>
+                  </nav>
+
+
+
+                  <h1 class="question__title" itemprop="name "> На сколько мозг мощнее суперкомпьютера? </h1>
+                  <div class="question__body">
+                    <div class="question__text" itemprop="text description">
+                      Мощность самого мощного суперкомпьютера Tianhe-2 33 петафлопса(33*10^15 флопс). Мощность мозга, по данным интернета, 10^16 операций в секунду. Получается, что Комп мощнее мозга. В чем ошибка и насколько все-таки мозг мощнее? </div>
+
+                  </div>
+                  <div class="question__comments-link">
+                    <span class="btn btn_link btn_comments-toggle">
+                      <span>Комментировать</span>
+                    </span>
+                  </div>
+                  <footer class="buttons-group buttons-group_question">
+                    <span class="btn btn_subscribe"> Подписаться
+											<span class="btn__counter"> 5 </span>
+										</span>
+                    <span class="btn btn_link btn_comments-toggle">
+                      <span>Комментировать</span>
+                    </span>
+                    <div class="dropdown dropdown_share" role="dropdown">
+                      <button class="btn btn_share">
+                        <svg class="icon_svg icon_sharing" viewBox="0 0 32 32">
+                          <use xlink:href="images/sprite_0.1.svg#icon_sharing"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </footer>
+                </div>
+
+
+                <div class="question__additionals">
+                  <div class="section section_solutions" id="solutions">
+                    <header class="section-header">
+                      <strong class="section-header__title"> Комментарии 
+                      	<span class="section-header__counter">1</span>
+											</strong>
+                    </header>
+
+
+                    <ul class="content-list content-list_answers" id="solutions_list">
+                      <li class="content-list__item">
+                        <div class="answer_wrapper ">
+                          <article class="answer answer_solution">
+                            <header class="answer__header">
+                              <div class="user-summary ">
+                                <a class="user-summary__avatar" href="https://toster.ru/user/Gromobanan777">                                  
+                                  <img src="https:/images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url=https://habrastorage.org/getpro/toster/d8ed2ded/380c/4fd4/d8ed2ded-380c-4fd4-b0af-9a85295b45f6/error404monster.jpg&container=focus&refresh=2592000&resize_w=60" alt="Gromobanan777">
+                                </a>
+                                <div class="user-summary__desc">
+                                  <a class="user-summary__name" href="https://toster.ru/user/Gromobanan777"> Илья Гром </a>
+                                  <span class="user-summary__nickname"> @Gromobanan777 </span>
+                                  <div class="user-summary__about">
+                                    «TotalSystem» </div>
+                                </div>
+                              </div>
+                            </header>
+                            <div class="answer__body">
+                              <div class="answer__body_inner">
+                                <div class="answer__text">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sit reprehenderit, quia illum a est pariatur beatae, dolor veritatis obcaecati omnis, maiores enim. Pariatur accusamus expedita non quos, enim repellat?
+                                </div>
+                                <div class="answer__date">
+                                  Ответ написан
+                                  <a class="date" href="https://toster.ru/answer?answer_id=215658#answers_list_answer">
+                                    <time itemprop="dateCreated" datetime="2013-12-29 18:40:44" title="Дата публикации: 29 дек. 2013, в 18:40">
+                                      более двух лет назад </time>
+                                  </a>
+                                </div>
+                                <div class="answer__comments-link" role="mobile_answers_link">
+                                  <a class="btn btn_link btn_comments-toggle" href="javascript:void(0)" role="auth_popup_trigger" title="Необходимо авторизоваться на сайте" data-value="Чтобы написать комментарий">
+                                    <span>Комментировать</span>
+                                  </a>
+                                </div>
+                              </div>
+                              <svg class="icon_svg icon_check_answer" viewBox="0 0 45 32">
+                                <use xlink:href="images/sprite_0.1.svg#icon_check"></use>
+                              </svg>
+                            </div>
+                          </article>
+                          <footer class="buttons-group buttons-group_answer" role="desktop_answers_link">
+                            <a class="btn btn_like" href="javascript:void(0);" role="auth_popup_trigger" title="Необходимо авторизоваться на сайте" data-value="Чтобы поблагодарить автора ответа."> Нравится
+															<span class="btn__counter" role="likes_count"> 2 </span></a>
+                            <a class="btn btn_link btn_comments-toggle" href="javascript:void(0)" role="auth_popup_trigger" title="Необходимо авторизоваться на сайте" data-value="Чтобы написать комментарий">
+                              <span>Комментировать</span>
+                            </a>
+                            <div class="dropdown dropdown_share" role="dropdown">
+                              <button class="btn btn_share" role="dropdown_trigger" data-toggle="dropdown" type="button" title=" Поделиться ответом">
+                                <svg class="icon_svg icon_sharing" viewBox="0 0 32 32">
+                                  <use xlink:href="images/sprite_0.1.svg#icon_sharing"></use>
+                                </svg>
+                              </button>
+
+                            </div>
+                          </footer>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+
+
+
+          <aside class="column_sidebar">
+
+            <dl class="panel-heading panel-heading_inner" role="most_interest">
+              <dt class="panel-heading__title panel-heading__title_underline"> Самое интересное за 24 часа </dt>
+              <dd class="panel-heading__content panel-heading__content_inner">
+                <ul class="content-list content-list_sidebar-block">
+                  <li class="content-list__item">
+                    <a class="question__title-link question__title_thin has_solution" href="https://toster.ru/q/357800"> Ускорение верстки psd? </a>
+                    <ul class="inline-list inline-list_meta-attrs">
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество человек, интересующихся вопросом"> 12 подписчиков </span>
+                      </li>
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество ответов на вопрос"> 3 ответа </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="content-list__item">
+                    <a class="question__title-link question__title_thin " href="https://toster.ru/q/357895"> Какой бесплатный SSL лучше? </a>
+                    <ul class="inline-list inline-list_meta-attrs">
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество человек, интересующихся вопросом"> 7 подписчиков </span>
+                      </li>
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество ответов на вопрос"> 3 ответа </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="content-list__item">
+                    <a class="question__title-link question__title_thin " href="https://toster.ru/q/357931"> Каким способом зашифровать код/часть кода, что бы не смогли декомпилировать? </a>
+                    <ul class="inline-list inline-list_meta-attrs">
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество человек, интересующихся вопросом"> 5 подписчиков </span>
+                      </li>
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество ответов на вопрос"> 3 ответа </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="content-list__item">
+                    <a class="question__title-link question__title_thin " href="https://toster.ru/q/357961"> Как настроить Docker для deployment-а? </a>
+                    <ul class="inline-list inline-list_meta-attrs">
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество человек, интересующихся вопросом"> 6 подписчиков </span>
+                      </li>
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество ответов на вопрос"> 0 ответов </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="content-list__item">
+                    <a class="question__title-link question__title_thin " href="https://toster.ru/q/357965"> Возможно вынести приложение из Docker в родительскую систему? </a>
+                    <ul class="inline-list inline-list_meta-attrs">
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество человек, интересующихся вопросом"> 4 подписчика  </span>
+                      </li>
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество ответов на вопрос"> 1 ответ </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="content-list__item">
+                    <a class="question__title-link question__title_thin " href="https://toster.ru/q/357982"> Отзывы по курсам портала software-testing? </a>
+                    <ul class="inline-list inline-list_meta-attrs">
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество человек, интересующихся вопросом"> 3 подписчика </span>
+                      </li>
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество ответов на вопрос"> 2 ответа </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="content-list__item">
+                    <a class="question__title-link question__title_thin " href="https://toster.ru/q/357999"> Какой опен-сорс прокси с гуи (кроме Squid) посоветуете? </a>
+                    <ul class="inline-list inline-list_meta-attrs">
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество человек, интересующихся вопросом"> 3 подписчика </span>
+                      </li>
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество ответов на вопрос"> 4 ответа </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="content-list__item">
+                    <a class="question__title-link question__title_thin " href="https://toster.ru/q/358005"> Где вести записи разработчику? </a>
+                    <ul class="inline-list inline-list_meta-attrs">
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество человек, интересующихся вопросом"> 4 подписчика </span>
+                      </li>
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество ответов на вопрос"> 5 ответов </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="content-list__item">
+                    <a class="question__title-link question__title_thin " href="https://toster.ru/q/358007"> Выбор CRM системы? </a>
+                    <ul class="inline-list inline-list_meta-attrs">
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество человек, интересующихся вопросом"> 3 подписчика </span>
+                      </li>
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество ответов на вопрос"> 1 ответ </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="content-list__item">
+                    <a class="question__title-link question__title_thin " href="https://toster.ru/q/358028"> Какие есть хранилища для логов и статистики? </a>
+                    <ul class="inline-list inline-list_meta-attrs">
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество человек, интересующихся вопросом"> 3 подписчика </span>
+                      </li>
+                      <li class="inline-list__item inline-list__item_bullet">
+                        <span title="Количество ответов на вопрос"> 2 ответа </span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+
+          </aside>
+        </section>
+      </div>
+
+
+      <footer class="layout__footer">
+        <div class="layout__footer_inner">
+          <nav class="menu_services">
+            <ul class="menu menu_inline">
+              <li class="menu__item">
+                <a class="menu__item-link" href="http://tmtm.ru">
+                  <span class="copyright_short">&copy; TM</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="info/about">О сайте</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="feedback">Обратная связь</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="http://habrahabr.ru/company/tm/">Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="menu_socials">
+            <ul class="menu menu_inline">
+              <li class="menu__item">
+                <a class="menu__item-link tw" href="https://twitter.com/toster_ru" title="Наш аккаунт в Twitter">
+                  <svg class="icon_svg icon_social_twitter" viewBox="0 0 39 32">
+                    <use xlink:href="images/sprite_0.1.svg#icon_social_twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link fb" href="https://www.facebook.com/toster.ru" title="Наша группа в Facebook">
+                  <svg class="icon_svg icon_social_facebook" viewBox="0 0 17 32">
+                    <use xlink:href="images/sprite_0.1.svg#icon_social_facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link vk" href="http://vk.com/toster_ru" title="Наша группа на Вконтакте">
+                  <svg class="icon_svg icon_social_vk" viewBox="0 0 56 32">
+                    <use xlink:href="images/sprite_0.1.svg#icon_social_vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </footer>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

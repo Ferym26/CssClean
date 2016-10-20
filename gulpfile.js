@@ -1,7 +1,6 @@
 var gulp           = require('gulp'),
 
-		uncss          = require('gulp-uncss'),
-		uncssp          = require('gulp-uncss-sp'),
+		uncss          = require('gulp-uncss'),		
 
 		autoprefixer   = require('gulp-autoprefixer'),
 		rename         = require('gulp-rename'),
@@ -10,9 +9,9 @@ var gulp           = require('gulp'),
  
 gulp.task('cssclean', function() {
 	gulp.src('./css/*.css')
-		.pipe(uncssp({
-			//html: glob.sync('html/**/*.html')
-			html: ['./html/index.html']
+		.pipe(uncss({
+			html: glob.sync('html/**/*.html'),		
+			timeout: 300
 		}))
 		.pipe(autoprefixer({
 			browsers: ['last 5 versions'],
